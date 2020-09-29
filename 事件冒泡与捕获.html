@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="i" />
+    <script>
+      document.body.addEventListener(
+        "click",
+        () => {
+          console.log("d11");
+        },
+        true
+      );
+
+      document.getElementById("i").addEventListener(
+        "click",
+        () => {
+          console.log("d22");
+        },
+        true
+      );
+      
+      document.body.addEventListener(
+        "click",
+        () => {
+          console.log("w11");
+        },
+        
+      );
+
+      document.getElementById("i").addEventListener(
+        "click",
+        () => {
+          console.log("w22");
+        },
+        
+      );
+
+      document.body.addEventListener(
+        "mousedown",
+        () => {
+          console.log("key1");
+        },
+        true
+      );
+
+      document.getElementById("i").addEventListener(
+        "mousedown",
+        () => {
+          console.log("key2");
+        },
+        true
+      );
+
+      document.body.addEventListener(
+        "mousedown",
+        () => {
+          console.log("key11");
+        },
+        false
+      );
+
+      document.getElementById("i").addEventListener(
+        "mousedown",
+        () => {
+          console.log("key22");
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
