@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("1 :>> ", 1);
+      var a1 = 1;
+      const a2 = 2;
+      let a3 = 3;
+
+      function fn1() {
+        var name1 = "iceman";
+        let b1 = 11;
+        let b2 = 22;
+        const b3 = '33';
+
+        return function fn2() {
+          console.log(name1);
+          console.log("b2 :>> ", b2);
+          console.table(b3);
+          var c1 = {a:1,b:2,c: this};
+          let c2 = true;
+          return 111
+        }
+
+      }
+      var fn3 = fn1()();
+      console.log('fn3 :>> ', fn3);
+    </script>
+  </body>
+</html>

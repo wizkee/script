@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="div">
+    div
+  </div>
+
+  <script>
+    var div = document.getElementById('div');
+    function f () {
+      console.log('this', this)
+      console.info('鼠标移动'+ Date.now());
+    }
+    
+    div.addEventListener("mousemove", f)
+
+  </script>
+</body>
+</html>
